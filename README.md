@@ -36,6 +36,15 @@ To optimize views/pizza.html, you will need to modify views/js/main.js until you
 
 You might find the FPS Counter/HUD Display useful in Chrome developer tools described here: [Chrome Dev Tools tips-and-tricks](https://developer.chrome.com/devtools/docs/tips-and-tricks).
 
+### Running the Application
+
+The website is hosted by GitHub on GitHub pages. To run the page, got to http://lee4gitr.github.io. 
+
+### Optimization in views/js/main.js
+1. Removed moving pizzas as they were confusing and unncessary.
+2. changePizzaSizes was switched to use switch statement.
+3. Optimized changePizzasSizes by instantiating a variable "pizzaSizes" for doccument.qyerySelectorAll(".randomPizzaContainer").
+
 ### Optimization Tips and Tricks
 * [Optimizing Performance](https://developers.google.com/web/fundamentals/performance/ "web performance")
 * [Analyzing the Critical Rendering Path](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/analyzing-crp.html "analyzing crp")
