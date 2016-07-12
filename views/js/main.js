@@ -498,7 +498,6 @@ console.log("Time to generate pizzas on load: " + timeToGenerate[0].duration + "
 
 // Iterator for number of times the pizzas in the background have scrolled.
 // Used by updatePositions() to decide when to log the average time per frame
-var frame = 0;
 
 // Logs the average amount of time per 10 frames needed to move the sliding background pizzas on scroll.
 function logAverageFrame(times) {   // times is the array of User Timing measurements from updatePositions()
@@ -514,13 +513,25 @@ function logAverageFrame(times) {   // times is the array of User Timing measure
 // https://www.igvita.com/slides/2012/devtools-tips-and-tricks/jank-demo.html
 
 // Moves the sliding background pizzas based on scroll position
+
+var frame = 0;
+
 function updatePositions() {
   frame++;
   window.performance.mark("mark_start_frame");
-
   var items = document.querySelectorAll('.mover');
-  for (var i = 0; i < items.length; i++) {
-    var phase = Math.sin((document.body.scrollTop / 1250) + (i % 5));
+  var top = document.body.scrollTop;
+  var constArray = [];
+  var i;
+  // GitHub Gist by anonymous/optimize-for-loop-snippet.js
+  // Generates the values without repeating in the loop.
+  for (i = 0; i < 5; i++) {
+   constArray.push(Math.sin((top/1250) + i));
+  }
+  // Creates phase value by using the constArray instead of depending on loop for the value.
+  for (i = 0; i < items.length; i++) {
+    var phase = constArray [i % 5];
+
     items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
   }
 
