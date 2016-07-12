@@ -552,7 +552,12 @@ window.addEventListener('scroll', updatePositions);
 document.addEventListener('DOMContentLoaded', function() {
   var cols = 8;
   var s = 256;
-  for (var i = 0; i < 200; i++) {
+  //This addition was thanks to emekdahl's project and coaching by Susan Smith.
+  var pizzaColumns = Math.ceil(window.innerWidth / s);
+  var pizzaRows = Math.ceil(window.innerHeight / s);
+  var pizzaNum = pizzaColumns * pizzaRows;
+  cols = pizzaColumns;
+  for (var i = 0; i < pizzaNum; i++) {
     var elem = document.createElement('img');
     elem.className = 'mover';
     elem.src = "images/pizza.png";
