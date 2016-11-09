@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content=" Main Site">
     <meta name="author" content=" Lee4Gitr ">
-    <title>Aubrey Mills: Portfolio</title>
-
+    <title>Aubrey Mills: Portfolio
+    </title>
     <!-- Hmm, what is the impact of web fonts on speed? Measure it... -->
     <!-- Google Fonts JS request -->
     <script>
       WebFontConfig = {
-        google: { families: [ 'Open+Sans:400,700:latin' ] }
+        google: {
+          families: [ 'Open+Sans:400,700:latin' ] }
       };
       (function() {
         var wf = document.createElement('script');
@@ -20,74 +21,192 @@
         wf.async = 'true';
         var s = document.getElementsByTagName('script')[0];
         s.parentNode.insertBefore(wf, s);
-      })();
+      }
+      )();
     </script>
-
     <script async defer>
-      (function(w,g){w['GoogleAnalyticsObject']=g;
-      w[g]=w[g]||function(){(w[g].q=w[g].q||[]).push(arguments)};w[g].l=1*new Date();})(window,'ga');
-
+      (function(w,g){
+        w['GoogleAnalyticsObject']=g;
+        w[g]=w[g]||function(){
+          (w[g].q=w[g].q||[]).push(arguments)};
+        w[g].l=1*new Date();
+      }
+      )(window,'ga');
       // Optional TODO: replace with your Google Analytics profile ID.
       ga('create', 'UA-XXXX-Y');
       ga('send', 'pageview');
     </script>
-
-    <script src="http://www.google-analytics.com/analytics.js" async defer></script>
-    <script src="js/perfmatters.js" async defer></script>
-
+    <script src="http://www.google-analytics.com/analytics.js" async defer>
+    </script>
+    <script src="js/perfmatters.js" async defer>
+    </script>
     <!--Inlined CSS and minified instead of requesting style.css-->
     <style>
-      html{font-size:100%;overflow-y:scroll;-webkit-tap-highlight-color:rgba(0,0,0,0);-ms-text-size-adjust:100%;-webkit-text-size-adjust:none}body{margin:0;font-size:14px;line-height:1.61;font-weight:400}body,button,input,select,textarea{font-family:'Open Sans', sans-serif;color:#333}a{color:#12C}a:visited{color:#61C}a:focus{outline:thin dotted}a:hover,a:active{color:#c00;outline:0}b,strong{font-weight:bold}pre,code{font-family:monospace, monospace;font-size:1em}ul,ol{margin:1em 0;padding:0 0 0 20px}img{border:0;max-width:100%}body{background:#fff}header,footer,.container{max-width:45em;margin:0 auto}header{padding:0 0.5em;color:#C90B0B}header img{border-radius:40px;float:left}header p{font-size:1.5em;font-weight:bold;padding-left:4em}header p span{font-size:0.8em;font-weight:normal}.hero{padding:2em;background-color:#f8f8f8;font-size:1.2em;border-bottom:1px solid #ccc;border-top:1px solid #ccc}.content{padding:1em 1em}.content li{list-style-type:none;font-size:1.1em}li img{float:left;padding-right:1em}li p{font-size:0.9em;font-style:italic}footer{padding:0 0.5em;border-top:1px solid #ccc}footer span{float:right;font-style:italic}@media only screen and (max-width: 480px){body{font-size:12px}header p{padding-left:4.5em}}
+      html{
+        font-size:100%;
+        overflow-y:scroll;
+        -webkit-tap-highlight-color:rgba(0,0,0,0);
+        -ms-text-size-adjust:100%;
+        -webkit-text-size-adjust:none}
+      body{
+        margin:0;
+        font-size:14px;
+        line-height:1.61;
+        font-weight:400}
+      body,button,input,select,textarea{
+        font-family:'Open Sans', sans-serif;
+        color:#333}
+      a{
+        color:#12C}
+      a:visited{
+        color:#61C}
+      a:focus{
+        outline:thin dotted}
+      a:hover,a:active{
+        color:#c00;
+        outline:0}
+      b,strong{
+        font-weight:bold}
+      pre,code{
+        font-family:monospace, monospace;
+        font-size:1em}
+      ul,ol{
+        margin:1em 0;
+        padding:0 0 0 20px}
+      img{
+        border:0;
+        max-width:100%}
+      body{
+        background:#fff}
+      header,footer,.container{
+        max-width:45em;
+        margin:0 auto}
+      header{
+        padding:0 0.5em;
+        color:#C90B0B}
+      header img{
+        border-radius:40px;
+        float:left}
+      header p{
+        font-size:1.5em;
+        font-weight:bold;
+        padding-left:4em}
+      header p span{
+        font-size:0.8em;
+        font-weight:normal}
+      .hero{
+        padding:2em;
+        background-color:#f8f8f8;
+        font-size:1.2em;
+        border-bottom:1px solid #ccc;
+        border-top:1px solid #ccc}
+      .content{
+        padding:1em 1em}
+      .content li{
+        list-style-type:none;
+        font-size:1.1em}
+      li img{
+        float:left;
+        padding-right:1em}
+      li p{
+        font-size:0.9em;
+        font-style:italic}
+      footer{
+        padding:0 0.5em;
+        border-top:1px solid #ccc}
+      footer span{
+        float:right;
+        font-style:italic}
+      @media only screen and (max-width: 480px){
+        body{
+          font-size:12px}
+        header p{
+          padding-left:4.5em}
+      }
     </style>
-    
     <!--Inlined CSS with a media query for "print" format-->
     <style media ="print">
-      @media print{*{background:transparent !important;color:black !important;text-shadow:none !important;filter:none !important;-ms-filter:none !important}a,a:visited{color:#444 !important;text-decoration:underline}a[href]:after{content:" (" attr(href) ")"}tr,img{page-break-inside:avoid}img{max-width:100% !important}@page{margin:0.5cm}p,h2,h3{orphans:3;widows:3}h2,h3{page-break-after:avoid}}
+      @media print{
+        *{
+          background:transparent !important;
+          color:black !important;
+          text-shadow:none !important;
+          filter:none !important;
+          -ms-filter:none !important}
+        a,a:visited{
+          color:#444 !important;
+          text-decoration:underline}
+        a[href]:after{
+          content:" (" attr(href) ")"}
+        tr,img{
+          page-break-inside:avoid}
+        img{
+          max-width:100% !important}
+        @page{
+          margin:0.5cm}
+        p,h2,h3{
+          orphans:3;
+          widows:3}
+        h2,h3{
+          page-break-after:avoid}
+      }
     </style>
   </head>
-
   <body>
     <header>
-      <a href="/"><img src=""></a>
-      <p>Aubrey Mills<br><span>Frontend Developer</span></p>
+      <a href="/">
+        <img src="">
+      </a>
+      <p>Aubrey Mills
+        <br>
+        <span>Frontend Developer
+        </span>
+      </p>
     </header>
-
     <div class="container">
       <div class="hero">
-        <strong>I love web development!</strong>This is a simple web template for showcasing my personal projects on GitHub. <br> Contact me: lee4gitr@gmail.com
+        <strong>I love web development!
+        </strong>This is a simple web template for showcasing my personal projects on GitHub. 
+        <br> Contact me: lee4gitr@gmail.com
       </div>
-
       <div class="content">
         <ul>
           <li>
             <img src="">
-            <a href="arcadeclone.html">Arcade Clone</a>
-            <p>This is a simple arcade game clone. Still in progress. :)</p>
+            <a href="arcadeclone.html">Arcade Clone
+            </a>
+            <p>This is a simple arcade game clone. Still in progress. :)
+            </p>
           </li>
-
           <li>
             <img src="">
-            <a href="resume.html">Resume</a>
-            <p>This is a resume that uses JQuery to populate my resume. I used JQuery to update the DOM.</p>
+            <a href="resume.html">Resume
+            </a>
+            <p>This is a resume that uses JQuery to populate my resume. I used JQuery to update the DOM.
+            </p>
           </li>
-
           <li>
             <img src="">
-            <a href="https://github.com/Lee4Gitr/frontend-nanodegree-feedreader">Jasmine.js Testing</a>
-            <p>This is a project where I used Jasmine.js to test webpage functionality. I used syncronous and asyncronous tests to ensure the webpage functioned as intended. (NOTE: Since this uses a cross-origin script, this project is most likely is going to show up empty. I will resolve this issue as soon as possible, but for now the link will simply take you to my GitHub project repsitory.) </p>
+            <a href="https://github.com/Lee4Gitr/frontend-nanodegree-feedreader">Jasmine.js Testing
+            </a>
+            <p>This is a project where I used Jasmine.js to test webpage functionality. I used syncronous and asyncronous tests to ensure the webpage functioned as intended. (NOTE: Since this uses a cross-origin script, this project is most likely is going to show up empty. I will resolve this issue as soon as possible, but for now the link will simply take you to my GitHub project repsitory.) 
+            </p>
           </li>
-
           <li>
-          <!--style="width: 100px;" was added after img tag to limit size of picture.-->
+            <!--style="width: 100px;" was added after img tag to limit size of picture.-->
             <img src="">
-            <a href="neighborhoodmap.html">Neighborhood Map</a>
-            <p>This is a map of some of my favorite local Places! I used Google Maps and Yelp APIs to place a marker on the map and populate the infowindow with Yelp reviews and pictures. </p>
+            <a href="neighborhoodmap.html">Neighborhood Map
+            </a>
+            <p>This is a map of some of my favorite local Places! I used Google Maps and Yelp APIs to place a marker on the map and populate the infowindow with Yelp reviews and pictures. 
+            </p>
           </li>
         </ul>
       </div>
-
       <footer>
-        <p>&copy; Web Performance 2014 <span id="crp-stats"></span></p>
+        <p>&copy; Web Performance 2014 
+          <span id="crp-stats">
+          </span>
+        </p>
       </footer>
     </div>
   </body>
