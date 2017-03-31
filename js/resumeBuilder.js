@@ -46,6 +46,12 @@ var work = {
         "location": "Tampa, FL, US",
         "dates": "2013 - 2016",
         "description": "Discuss project with the patron and develop a composition for their needs."
+    }, {
+        "employer": "HighPoint Solutions",
+        "title": "Web Developer",
+        "location": "Tampa, FL, US",
+        "dates": "2017 - Present",
+        "description": "Develop and maintain web applications for Clientel."
     }]
 };
 
